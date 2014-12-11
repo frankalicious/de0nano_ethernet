@@ -1,0 +1,24 @@
+Cmp-Mod V01 Created by Cvpcb (2014-11-30 BZR 5308)-product   date = Do 11 Dez 2014 23:15:18 CET
+
+BeginCmp
+TimeStamp = /548A029C;
+Reference = HDR1;
+ValeurCmp = Waveshare DP83848;
+IdModule  = ab2_header:AB2_HDR_M10-2V;
+EndCmp
+
+BeginCmp
+TimeStamp = /548A205A;
+Reference = HDR2;
+ValeurCmp = Waveshare DP83848;
+IdModule  = ab2_header:AB2_HDR_M10-2V;
+EndCmp
+
+BeginCmp
+TimeStamp = /548A07D4;
+Reference = HDR3;
+ValeurCmp = DE0_NANO GPIO-0;
+IdModule  = ab2_header:AB2_HDR_M20-2V;
+EndCmp
+
+EndListe

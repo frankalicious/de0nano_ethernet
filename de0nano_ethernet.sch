@@ -1,0 +1,434 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
+LIBS:Universal
+LIBS:de0nano_ethernet-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AB2_HDR10-2 HDR1
+U 1 1 548A029C
+P 2200 2350
+F 0 "HDR1" H 2200 1350 60  0000 C CNN
+F 1 "Waveshare DP83848" H 2200 2650 60  0000 C CNN
+F 2 "ab2_header:AB2_HDR_M10-2V" H 2150 2350 60  0001 C CNN
+F 3 "" H 2150 2350 60  0000 C CNN
+	1    2200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 548A040B
+P 1600 2500
+F 0 "#PWR01" H 1600 2500 30  0001 C CNN
+F 1 "GND" H 1600 2430 30  0001 C CNN
+F 2 "" H 1600 2500 60  0000 C CNN
+F 3 "" H 1600 2500 60  0000 C CNN
+	1    1600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 548A0420
+P 2800 2500
+F 0 "#PWR02" H 2800 2500 30  0001 C CNN
+F 1 "GND" H 2800 2430 30  0001 C CNN
+F 2 "" H 2800 2500 60  0000 C CNN
+F 3 "" H 2800 2500 60  0000 C CNN
+	1    2800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 548A0435
+P 1800 2250
+F 0 "#PWR03" H 1800 2210 30  0001 C CNN
+F 1 "+3.3V" H 1800 2360 30  0000 C CNN
+F 2 "" H 1800 2250 60  0000 C CNN
+F 3 "" H 1800 2250 60  0000 C CNN
+	1    1800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR04
+U 1 1 548A044C
+P 2650 2250
+F 0 "#PWR04" H 2650 2210 30  0001 C CNN
+F 1 "+3.3V" H 2650 2360 30  0000 C CNN
+F 2 "" H 2650 2250 60  0000 C CNN
+F 3 "" H 2650 2250 60  0000 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2450 2800 2450
+Wire Wire Line
+	1600 2450 2150 2450
+Wire Wire Line
+	1800 2250 2000 2250
+Wire Wire Line
+	2000 2250 2000 2350
+Wire Wire Line
+	2000 2350 2150 2350
+Wire Wire Line
+	2250 2350 2400 2350
+Wire Wire Line
+	2400 2350 2400 2250
+Wire Wire Line
+	2400 2250 2650 2250
+Wire Wire Line
+	1700 2550 2150 2550
+Text Label 1700 2550 0    60   ~ 0
+MDIO_1
+Text Label 1700 2650 0    60   ~ 0
+OSCIN_1
+Text Label 1700 2750 0    60   ~ 0
+RXD0_1
+Text Label 1700 2850 0    60   ~ 0
+TX_EN_1
+Text Label 1700 2950 0    60   ~ 0
+TXD1_1
+Text Label 2350 2850 0    60   ~ 0
+TXD0_1
+Text Label 2350 2750 0    60   ~ 0
+RXD1_1
+Text Label 2350 2650 0    60   ~ 0
+CRS_DV_1
+Text Label 2350 2550 0    60   ~ 0
+MDC_1
+Wire Wire Line
+	1700 2650 2150 2650
+Wire Wire Line
+	1700 2750 2150 2750
+Wire Wire Line
+	1700 2850 2150 2850
+Wire Wire Line
+	1700 2950 2150 2950
+Wire Wire Line
+	2250 2850 2750 2850
+Wire Wire Line
+	2250 2750 2750 2750
+Wire Wire Line
+	2250 2650 2750 2650
+Wire Wire Line
+	2250 2550 2750 2550
+$Comp
+L AB2_HDR20-2 HDR3
+U 1 1 548A07D4
+P 3750 2650
+F 0 "HDR3" H 3750 650 60  0000 C CNN
+F 1 "DE0_NANO GPIO-0" H 3750 2800 60  0000 C CNN
+F 2 "ab2_header:AB2_HDR_M20-2V" H 3700 2650 60  0001 C CNN
+F 3 "" H 3700 2650 60  0000 C CNN
+	1    3750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 548A0B3A
+P 3100 3150
+F 0 "#PWR05" H 3100 3240 20  0001 C CNN
+F 1 "+5V" H 3100 3240 30  0000 C CNN
+F 2 "" H 3100 3150 60  0000 C CNN
+F 3 "" H 3100 3150 60  0000 C CNN
+	1    3100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR06
+U 1 1 548A0B70
+P 3300 4050
+F 0 "#PWR06" H 3300 4010 30  0001 C CNN
+F 1 "+3.3V" H 3300 4160 30  0000 C CNN
+F 2 "" H 3300 4050 60  0000 C CNN
+F 3 "" H 3300 4050 60  0000 C CNN
+	1    3300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 548A0BA7
+P 4250 3200
+F 0 "#PWR07" H 4250 3200 30  0001 C CNN
+F 1 "GND" H 4250 3130 30  0001 C CNN
+F 2 "" H 4250 3200 60  0000 C CNN
+F 3 "" H 4250 3200 60  0000 C CNN
+	1    4250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 548A0BD1
+P 4200 4100
+F 0 "#PWR08" H 4200 4100 30  0001 C CNN
+F 1 "GND" H 4200 4030 30  0001 C CNN
+F 2 "" H 4200 4100 60  0000 C CNN
+F 3 "" H 4200 4100 60  0000 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2850 3700 2850
+Text Label 3250 2850 0    60   ~ 0
+MDIO_1
+Text Label 3250 2650 0    60   ~ 0
+OSCIN_1
+Text Label 3250 2950 0    60   ~ 0
+RXD0_1
+Text Label 3250 3050 0    60   ~ 0
+TX_EN_1
+Text Label 3850 2650 0    60   ~ 0
+TXD1_1
+Wire Wire Line
+	3250 2650 3700 2650
+Wire Wire Line
+	3250 2950 3700 2950
+Wire Wire Line
+	3250 3050 3700 3050
+Wire Wire Line
+	3800 2650 4150 2650
+Text Label 3850 3050 0    60   ~ 0
+TXD0_1
+Text Label 3850 2950 0    60   ~ 0
+RXD1_1
+Text Label 3850 2850 0    60   ~ 0
+CRS_DV_1
+Text Label 3850 2750 0    60   ~ 0
+MDC_1
+Wire Wire Line
+	3800 3050 4200 3050
+Wire Wire Line
+	4200 2950 3800 2950
+Wire Wire Line
+	3800 2850 4200 2850
+Wire Wire Line
+	3800 2750 4200 2750
+Wire Wire Line
+	3100 3150 3700 3150
+Wire Wire Line
+	3800 3150 4250 3150
+Wire Wire Line
+	4250 3150 4250 3200
+Wire Wire Line
+	3300 4050 3700 4050
+Wire Wire Line
+	3800 4050 4200 4050
+Wire Wire Line
+	4200 4050 4200 4100
+Wire Wire Line
+	1600 2450 1600 2500
+Wire Wire Line
+	2800 2450 2800 2500
+$Comp
+L AB2_HDR10-2 HDR2
+U 1 1 548A205A
+P 2250 4350
+F 0 "HDR2" H 2250 3350 60  0000 C CNN
+F 1 "Waveshare DP83848" H 2250 4650 60  0000 C CNN
+F 2 "ab2_header:AB2_HDR_M10-2V" H 2200 4350 60  0001 C CNN
+F 3 "" H 2200 4350 60  0000 C CNN
+	1    2250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 548A2060
+P 1650 4500
+F 0 "#PWR?" H 1650 4500 30  0001 C CNN
+F 1 "GND" H 1650 4430 30  0001 C CNN
+F 2 "" H 1650 4500 60  0000 C CNN
+F 3 "" H 1650 4500 60  0000 C CNN
+	1    1650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 548A2066
+P 2850 4500
+F 0 "#PWR?" H 2850 4500 30  0001 C CNN
+F 1 "GND" H 2850 4430 30  0001 C CNN
+F 2 "" H 2850 4500 60  0000 C CNN
+F 3 "" H 2850 4500 60  0000 C CNN
+	1    2850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 548A206C
+P 1850 4250
+F 0 "#PWR?" H 1850 4210 30  0001 C CNN
+F 1 "+3.3V" H 1850 4360 30  0000 C CNN
+F 2 "" H 1850 4250 60  0000 C CNN
+F 3 "" H 1850 4250 60  0000 C CNN
+	1    1850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 548A2072
+P 2700 4250
+F 0 "#PWR?" H 2700 4210 30  0001 C CNN
+F 1 "+3.3V" H 2700 4360 30  0000 C CNN
+F 2 "" H 2700 4250 60  0000 C CNN
+F 3 "" H 2700 4250 60  0000 C CNN
+	1    2700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4450 2850 4450
+Wire Wire Line
+	1650 4450 2200 4450
+Wire Wire Line
+	1850 4250 2050 4250
+Wire Wire Line
+	2050 4250 2050 4350
+Wire Wire Line
+	2050 4350 2200 4350
+Wire Wire Line
+	2300 4350 2450 4350
+Wire Wire Line
+	2450 4350 2450 4250
+Wire Wire Line
+	2450 4250 2700 4250
+Wire Wire Line
+	1750 4550 2200 4550
+Text Label 1750 4550 0    60   ~ 0
+MDIO_2
+Text Label 1750 4650 0    60   ~ 0
+OSCIN_2
+Text Label 1750 4750 0    60   ~ 0
+RXD0_2
+Text Label 1750 4850 0    60   ~ 0
+TX_EN_2
+Text Label 1750 4950 0    60   ~ 0
+TXD1_2
+Text Label 2400 4850 0    60   ~ 0
+TXD0_2
+Text Label 2400 4750 0    60   ~ 0
+RXD1_2
+Text Label 2400 4650 0    60   ~ 0
+CRS_DV_2
+Text Label 2400 4550 0    60   ~ 0
+MDC_2
+Wire Wire Line
+	1750 4650 2200 4650
+Wire Wire Line
+	1750 4750 2200 4750
+Wire Wire Line
+	1750 4850 2200 4850
+Wire Wire Line
+	1750 4950 2200 4950
+Wire Wire Line
+	2300 4850 2800 4850
+Wire Wire Line
+	2300 4750 2800 4750
+Wire Wire Line
+	2300 4650 2800 4650
+Wire Wire Line
+	2300 4550 2800 4550
+Wire Wire Line
+	1650 4450 1650 4500
+Wire Wire Line
+	2850 4450 2850 4500
+Wire Wire Line
+	3250 4350 3700 4350
+Text Label 3250 4350 0    60   ~ 0
+MDIO_2
+Text Label 3250 2750 0    60   ~ 0
+OSCIN_2
+Text Label 3250 4450 0    60   ~ 0
+RXD0_2
+Text Label 3250 4550 0    60   ~ 0
+TX_EN_2
+Wire Wire Line
+	3250 2750 3700 2750
+Wire Wire Line
+	3250 4450 3700 4450
+Wire Wire Line
+	3250 4550 3700 4550
+Text Label 3900 4550 0    60   ~ 0
+TXD0_2
+Text Label 3900 4450 0    60   ~ 0
+RXD1_2
+Text Label 3900 4350 0    60   ~ 0
+CRS_DV_2
+Text Label 3900 4250 0    60   ~ 0
+MDC_2
+Wire Wire Line
+	3800 4550 4300 4550
+Wire Wire Line
+	3800 4450 4300 4450
+Wire Wire Line
+	3800 4350 4300 4350
+Wire Wire Line
+	3800 4250 4300 4250
+$EndSCHEMATC
